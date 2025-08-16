@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build FaceLogin with OpenCV",
+            "type": "shell",
+            "command": "cl",
+            "args": [
+                "Face.cpp",
+                "/EHsc",
+                "/I", "C:\\Users\\anjol\\OneDrive\\Desktop\\opencv\\opencv\\build\\include",
+                "/link",
+                "/LIBPATH:C:\\Users\\anjol\\OneDrive\\Desktop\\opencv\\opencv\\build\\x64\\vc16\\lib",
+                "opencv_world490.lib"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$msCompile"]
+        }
+    ]
+}
